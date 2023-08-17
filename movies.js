@@ -1,11 +1,9 @@
-// id to keep track of which element to remove (this would be better not in global scope)
 let currentId = 0;
 
-// list of all of movies in memory for sorting / repainting
+
 let moviesList = [];
 
 $(function() {
-  // when you click the delete button, remove the closest parent tr
 
   $("#new-movie-form").on("submit", function(evt) {
     evt.preventDefault();
